@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "kebab-mod",
+	"version": "${version}",
+	"name": "Tanu's Kebab Mod",
+	"description": "Mod what adds KEBAAB!",
+	"authors": [
+		"Tanuliini"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/"
+	},
+	"license": "MIT",
+	"icon": "assets/kebab-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tanu.kebab.TanusKebabMod"
+		],
+		"fabric-datagen": [
+			"tanu.kebab.TanusKebabModDataGenerator"
+		],
+        "client": [
+          "tanu.kebab.KebabModClient"
+        ]
+	},
+	"mixins": [
+		"kebab-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
