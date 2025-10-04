@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "kebab-mod:kebab_bread",
+    "kebab-mod:kebab_kastike"
+  ],
+  "result": {
+    "id": "kebab-mod:kebab_leipa_kastikkeella"
+  }
+}

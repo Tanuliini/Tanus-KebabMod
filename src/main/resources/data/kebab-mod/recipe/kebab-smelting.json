@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": "kebab-mod:raw_kebab",
+  "result": {
+    "id": "kebab-mod:kebab"
+  }
+}

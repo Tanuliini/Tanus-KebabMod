@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kebab-mod:item/over_cooked_kebab_bread"
+  }
+}

@@ -1,5 +1,8 @@
 {
   "item.kebab-mod.kebab": "Kebab",
   "item.kebab-mod.raw_kebab": "Raaka Kebab",
-  "item.kebab-mod.kebab_bread": "Kebab Leipä"
+  "item.kebab-mod.kebab_bread": "Kebab Leipä",
+  "item.kebab-mod.kebab_kastike": "Kebab Kastike",
+  "item.kebab-mod.over_cooked_kebab_bread": "Yli Paistettu Kebab Leipä",
+  "item.kebab-mod.kebab_leipa_kastikkeella": "Kebab Leipä Kastikkeella"
 }
