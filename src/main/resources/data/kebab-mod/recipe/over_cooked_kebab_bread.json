@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:blasting",
+    "category": "food",
+    "ingredient": {
+        "item": "kebab-mod:kebab_bread"
+    },
+    "result": {
+        "id": "kebab-mod:over_cooked_kebab_bread"
+    },
+    "cookingtime": 300
+}

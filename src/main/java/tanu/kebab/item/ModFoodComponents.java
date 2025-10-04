@@ -6,11 +6,24 @@ import net.minecraft.entity.effect.StatusEffects;
 
 public class ModFoodComponents {
     public static final FoodComponent KEBAB = new FoodComponent.Builder().nutrition(6).saturationModifier(0.65f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 200), 0.05f).build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 200), 0.05f)
+            .build();
 
     public static final FoodComponent RAW_KEBAB = new FoodComponent.Builder().nutrition(2).saturationModifier(0.2f)
             .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 300), 0.35f)
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300), 0.05f)
+            .build();
+
+    public static final FoodComponent KEBAB_BREAD = new FoodComponent.Builder().nutrition(6).saturationModifier(1.2F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 400), 0.55f)
+            .build();
+
+    public static final FoodComponent OVER_COOKED_KEBAB_BREAD = new FoodComponent.Builder().nutrition(1).saturationModifier(0.3F).snack()
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 150), 1f)
+            .build();
+
+    public static final FoodComponent KEBAB_LEIPA_KASTIKKEELLA = new FoodComponent.Builder().nutrition(6).saturationModifier(1.2F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 800), 1f)
             .build();
 
 }

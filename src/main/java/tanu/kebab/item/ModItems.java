@@ -9,9 +9,14 @@ import net.minecraft.util.Identifier;
 import tanu.kebab.TanusKebabMod;
 
 public class ModItems {
+    public static final Item KEBAB_KASTIKE = registerItem("kebab_kastike", new Item(new Item.Settings()));
+
     public static final Item KEBAB = registerItem("kebab", new Item(new Item.Settings().food(ModFoodComponents.KEBAB)));
     public static final Item RAW_KEBAB = registerItem("raw_kebab", new Item(new Item.Settings().food(ModFoodComponents.RAW_KEBAB)));
-    public static final Item KEBAB_BREAD = registerItem("kebab_bread", new Item(new Item.Settings()));
+
+    public static final Item KEBAB_BREAD = registerItem("kebab_bread", new Item(new Item.Settings().food(ModFoodComponents.KEBAB_BREAD)));
+    public static final Item OVER_COOKED_KEBAB_BREAD = registerItem("over_cooked_kebab_bread", new Item(new Item.Settings().food(ModFoodComponents.OVER_COOKED_KEBAB_BREAD)));
+    public static final Item KEBAB_LEIPA_KASTIKKEELLA = registerItem("kebab_leipa_kastikkeella", new Item(new Item.Settings().food(ModFoodComponents.KEBAB_LEIPA_KASTIKKEELLA)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TanusKebabMod.MOD_ID, name), item);
@@ -30,6 +35,15 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(KEBAB_BREAD);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(OVER_COOKED_KEBAB_BREAD);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(KEBAB_LEIPA_KASTIKKEELLA);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(KEBAB_KASTIKE);
         });
     }
 }

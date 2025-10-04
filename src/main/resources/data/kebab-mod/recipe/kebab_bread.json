@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " b ",
+    " k ",
+    " b "
+  ],
+  "key": {
+    "k": {
+      "item": "kebab-mod:kebab"
+    },
+    "b": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result": {
+    "id": "kebab-mod:kebab_bread",
+    "count": 1
+  }
+}

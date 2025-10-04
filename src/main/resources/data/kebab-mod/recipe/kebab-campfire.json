@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "ingredient": {
+    "item": "kebab-mod:raw_kebab"
+  },
+  "result": {
+    "id": "kebab-mod:kebab"
+  }
+}

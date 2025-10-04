@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:potion"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "egg"
+    }
+  ],
+  "result": {
+    "id": "kebab-mod:kebab_kastike"
+  }
+}
